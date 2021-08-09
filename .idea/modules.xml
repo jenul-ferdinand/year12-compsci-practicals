@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Experiments/Experiments.iml" filepath="$PROJECT_DIR$/Experiments/Experiments.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Flowmodoro/Flowmodoro.iml" filepath="$PROJECT_DIR$/Flowmodoro/Flowmodoro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 1 - House/Prac 1 - House.iml" filepath="$PROJECT_DIR$/Prac 1 - House/Prac 1 - House.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 10 - 2D Arrays/Prac 10 - 2D Arrays.iml" filepath="$PROJECT_DIR$/Prac 10 - 2D Arrays/Prac 10 - 2D Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 11 - Mouse Events/Prac 11 - Mouse Events.iml" filepath="$PROJECT_DIR$/Prac 11 - Mouse Events/Prac 11 - Mouse Events.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 2 - Calculator/Prac 2 - Calculator.iml" filepath="$PROJECT_DIR$/Prac 2 - Calculator/Prac 2 - Calculator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 3 - Integers &amp; Reals/Prac 3 - Integers &amp; Reals.iml" filepath="$PROJECT_DIR$/Prac 3 - Integers &amp; Reals/Prac 3 - Integers &amp; Reals.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 4 - House With Methods/Prac 4 - House With Methods.iml" filepath="$PROJECT_DIR$/Prac 4 - House With Methods/Prac 4 - House With Methods.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 5 - Strings/Prac 5 - Strings.iml" filepath="$PROJECT_DIR$/Prac 5 - Strings/Prac 5 - Strings.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 6 - If and Switch/Prac 6 - If and Switch.iml" filepath="$PROJECT_DIR$/Prac 6 - If and Switch/Prac 6 - If and Switch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 7 - Loops/Prac 7 - Loops.iml" filepath="$PROJECT_DIR$/Prac 7 - Loops/Prac 7 - Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 8 - Arrays/Prac 8 - Arrays.iml" filepath="$PROJECT_DIR$/Prac 8 - Arrays/Prac 8 - Arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Prac 9 - Classes and Objects/Prac 9 - Classes and Objects.iml" filepath="$PROJECT_DIR$/Prac 9 - Classes and Objects/Prac 9 - Classes and Objects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Practical Tasks.iml" filepath="$PROJECT_DIR$/.idea/Practical Tasks.iml" />
+    </modules>
+  </component>
+</project>
