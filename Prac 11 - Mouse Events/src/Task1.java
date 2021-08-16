@@ -26,6 +26,7 @@ class MyCanvas extends JPanel implements MouseListener {
         graphics2D.setColor(Color.white);
         graphics2D.fillRect(0, 0, getSize().width, getSize().height);
         graphics2D.setColor(Color.black);
+
         repaint();
     }
 
@@ -44,6 +45,7 @@ class MyCanvas extends JPanel implements MouseListener {
     }
 
     public void mouseEntered(MouseEvent e) {
+        System.out.println("The mouse has entered.");
     }
 
     public void mouseExited(MouseEvent e) {

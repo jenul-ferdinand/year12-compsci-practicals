@@ -20,7 +20,7 @@ class Task2_1 extends JPanel implements ActionListener {
         submitButton = new Button("Submit");
         submitButton.addActionListener(this);
 
-        add(prompt);
+        add(prompt);    
         add(dayNumberField);
         add(submitButton);
 
