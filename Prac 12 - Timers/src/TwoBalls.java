@@ -14,6 +14,7 @@ class MyCanvas extends JPanel implements MouseListener, MouseMotionListener {
 	int bottom = 300;
 
 	Ball ball1;
+	Ball ball2;
 	int initBallSize = 40;
 	// Start at the center of the court
 	int initBallX = (right/2) - initBallSize;
@@ -28,6 +29,7 @@ class MyCanvas extends JPanel implements MouseListener, MouseMotionListener {
 	int initPaddleSize = 20;
 
 	Timer timer1;
+	Timer timer2;
 	int initialDelay = 10;
 	int refreshRate = 10;
 	
@@ -36,24 +38,33 @@ class MyCanvas extends JPanel implements MouseListener, MouseMotionListener {
 		
 		court = new Court(left, right, top, bottom);
 		ball1 = new Ball(initBallX, initBallY, initBallXSpeed, initBallYSpeed, initBallSize, initBallColour);
+		ball2 = new Ball(initBallX, initBallY, initBallXSpeed, initBallYSpeed, initBallSize, initBallColour);
 		
 		timer1 = new Timer();
+		timer2 = new Timer();
 
 		paddle = new Paddle(initPaddleX, initPaddleY, initPaddleSize);
 		addMouseListener(this);
 		addMouseMotionListener(this);
 
 		// initial delay and refresh rate are in milliseconds
-		timer1.schedule(new AnimationTask(), initialDelay, refreshRate);
+		timer1.schedule(new AnimationTask1(), initialDelay, refreshRate);
+		timer2.schedule(new AnimationTask2(), initialDelay, refreshRate);
 	}
 	
-	private class AnimationTask extends TimerTask {
+	private class AnimationTask1 extends TimerTask {
 		public void run() {
 			ball1.move(court);
 			repaint();
 		}	
 	}
-	
+	private class AnimationTask2 extends TimerTask {
+		public void run() {
+			ball2.move(court);
+			repaint();
+		}
+	}
+
 	public void paint(Graphics g) {
 		paintComponent(g);
 
@@ -65,6 +76,9 @@ class MyCanvas extends JPanel implements MouseListener, MouseMotionListener {
 		
 		g.setColor(ball1.col);
 		ball1.draw(g);
+
+		g.setColor(ball2.col);
+		ball2.draw(g);
 	}
 
 	// Mouse events
@@ -84,10 +98,16 @@ class MyCanvas extends JPanel implements MouseListener, MouseMotionListener {
 	public void mousePressed(MouseEvent e) {
 		paddle.setCoordinates(e.getX(),e.getY());
 
-		if (paddle.intersects(ball1))
-		{
-			System.out.println("Hit!");
+		if (paddle.intersects(ball1)) {
+			System.out.println("Hit Ball 1");
 			timer1.cancel();
+			timer1.purge();
+		}
+
+		if (paddle.intersects(ball2)) {
+			System.out.println("Hit Ball 2");
+			timer2.cancel();
+			timer2.purge();
 		}
 
 		repaint();
@@ -106,10 +126,7 @@ class MyCanvas extends JPanel implements MouseListener, MouseMotionListener {
 	}
 }
 
-
-
-
-public class BallAndPaddle {
+public class TwoBalls {
 	public static void main(String[] a) {
 		MyCanvas myCanvas = new MyCanvas();
 		myCanvas.init();
